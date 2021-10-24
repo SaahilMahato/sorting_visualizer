@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #8B8682;
+  background-color: #FFFFFD;
 }
 
 .App-logo {
@@ -35,5 +35,74 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.container {
+  max-width: 100%;
+  margin: auto auto;
+  overflow: auto;
+  min-height: 10%;
+  border: 1px solid steelblue;
+  padding: 5px;
+}
+
+/* Style the form - display items horizontally */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+.form-inline label {
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 93em;
+}
+
+.form-inline select {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.form-inline button {
+  padding: 10px 20px;
+  margin: 5px 10px 5px 0;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+.form-inline button:disabled {
+  background-color: #666666;
+} 
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
