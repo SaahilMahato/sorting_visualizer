@@ -9,7 +9,7 @@ const Graph = ( {numbers} ) => {
 
     return (
         <div className='container'>
-            <BarChart width={1800} height={750} data={data}>
+            <BarChart width={1800} height={715} data={data}>
                 <XAxis dataKey="number" />
                 <YAxis />
                 <Bar dataKey="number" fill="#8884d8" />
